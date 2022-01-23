@@ -1,0 +1,21 @@
+<head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body >
+    <div class="chat-container"></div>
+    <script src="https://npm-scalableminds.s3.eu-central-1.amazonaws.com/@scalableminds/chatroom@master/dist/Chatroom.js"/></script>
+    <script type="text/javascript">
+      var chatroom = new window.Chatroom({
+        host: "http://localhost:5005",
+        // host: "https://f0ce-182-2-39-202.ngrok.io",
+        // host: "http://20.213.153.94:5005",
+        title: "ARTour Bot",
+        profileAvatar: "avatar.png",
+        container: document.querySelector(".chat-container"),
+        welcomeMessage: "Halo selamat datang Artourist . . .",
+        speechRecognition: 'id-ID',
+        voiceLang: 'id-ID'
+      });
+      chatroom.openChat();
+    </script>
+  </body>

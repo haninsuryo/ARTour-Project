@@ -1,0 +1,112 @@
+
+# entities:
+# - nama
+
+# slots:
+#   nama:
+#     type: text
+#     influence_conversation: true
+#     mappings:
+#     - type: from_entity
+#       entity: nama
+
+intents:
+  - greet
+  - kabar
+  - bantuan
+  - affirm
+  - deny
+  - candi
+  - lingkungan_candi
+  - lokasi
+  - waktu
+  - tiket
+  - akomodasi_kendaraan_pribadi
+  - akomodasi_bus
+  - akomodasi_kereta_api
+  - akomodasi_pesawat
+  - kuliner
+  - sourvenir
+  - covid
+  - bot_challenge
+  # - Artourist
+  - goodbye
+
+responses:
+
+  utter_greet:
+  - text: "Selamat datang, Artourist!"
+
+  utter_kabar:
+  - text: "Kabar ARTour sangat baik ^^"
+
+  utter_affirm:
+  - text: "siyap Artourist"
+  - text: "hehehe"
+  - text: "mantap kan . . ."
+  - text: "Oke siap"
+
+  utter_deny:
+  - text: "baik tidak apa-apa"
+  - text: "tidak apa"
+  - text: "ada masalah Artourist?"
+  - text: "mungkin lain kali yaa"
+
+  utter_bantuan:
+  - text: "Ada yang bisa dibantu?"
+
+  utter_candi:
+  - text: "Candi Prambanan adalah termasuk Situs Warisan Dunia UNESCO, candi Hindu terbesar di Indonesia, sekaligus salah satu candi terindah di Asia Tenggara."
+    image: "https://blog.reservasi.com/wp-content/uploads/2016/09/candi-prambanan-reservasi.jpg"
+
+  utter_lingkungan_candi:
+  - text: "Kompleks candi Prambanan terdiri atas tiga zona; pertama adalah zona luar, kedua adalah zona tengah yang terdiri atas ratusan candi, ketiga adalah zona dalam yang merupakan zona tersuci tempat delapan candi utama dan delapan kuil kecil."
+
+  utter_lokasi:
+  - text: "Lokasi Candi Prambanan : Jl. Raya Solo - Yogyakarta No.16, Kranggan, Bokoharjo, Kec. Prambanan, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55571."
+
+  utter_waktu:
+  - text: "Jam buka candi mulai pukul 06.00-17.00 WIB"
+
+  utter_tiket:
+  - text: "Berwisata di Candi Prambanan Yogyakarta tidak akan menguras biaya banyak. Harga tiket mulai dari Rp 25.000 - Rp 75.000 cukup terjangkau dengan fasilitas yang baik."
+
+  utter_kendaraan_pribadi:
+  - text: "Menuju Prambanan menggunakan kendaraan pribadi tidaklah sulit. Cukup melalui jalan raya Solo - Yogya yang bisa diakses dari jalan lingkar luar Yogya atau dari dalam kota Yogya melalui jalan Laksda Adisutjipto. Candi Prambanan terletak di km 16 jalan raya Solo - Yogya sebelah utara jalan."
+
+  utter_bus:
+  - text: "Bus Transjogja yang melayani rute Prambanan hanya jalur 1A. Anda bisa menaiki bus ini dari Halte Mangkubumi dekat Stasiun Kereta Api Tugu Yogyakarta dan Malioboro."
+  - text: "Jika anda berangkat dari area sekitar Terminal Bus Giwangan, Anda dapat langsung menggunakan bus jalur 1A dari terminal atau menggunakan bus antar kota jurusan Solo."
+
+  utter_kereta_api:
+  - text: "Menuju Candi Prambanan juga bisa dilakukan dengan tranportasi umum kereta api (KA). Salah satunya Prambanan Ekspres (Prameks). Beberapa rangkaian Prameks ada yang berhenti di Stasiun Brambanan. Dari sini, wisatawan tinggal jalan kaki sejauh kurang lebih 1 km menuju Candi Prambanan."
+
+  utter_pesawat:
+  - text: "Pengunjung luar daerah Yogyakarta yang ingin berpariwisata ke Candi Prambanan lewat jalur udara bisa berhenti di Bandar Udara Internasional Yogyakarta atau Yogyakarta International Airport (YIA) di Kulon Progo. Setelah itu bisa memilih menggunakan taksi, transjogja, KA prameks atau ojek online."
+
+  utter_kuliner:
+  - text: "Ada banyak sekali rekomendasi makanan disekitar wilayah candi prambanan, misalnya gudeg, nasi liwet dan angkringan."
+
+  utter_sourvenir:
+  - text: "Batik Candi Prambanan merupakan salah satu jenis cendera mata yang sangat pas Anda jadikan sebagai buah tangan untuk orang tersayang."
+  - text: "Salah satu souvenir khas Candi Prambanan yaitu kaos khas Candi Prambanan. Anda bisa mendapatkannya di pelataran sekitar Candi Prambanan."
+  - text: "Souvenir dari Candi Prambanan unik yang bisa Anda beli yaitu miniatur khas Candi Prambanan."
+  - text: "Buah tangan di Candi Prambanan berupa gantungan kunci, miniatur candi Hindu hingga beragam benda unik lainnya."
+
+  utter_covid:
+  - text: "Para pengunjung wajib : Menerapkan Protokol CHSE (Cleanliness, Health, Safety, Environment) bagi pengunjung, karyawan, dan seniman. Pengunjung wajib mengenakan masker, mejaga jarak serta mematuhi protokol kesehatan yang telah disediakan."
+  
+  utter_iamabot:
+  - text: "Panggil saja aku Artour. Terimakasih sudah bertanya, salam kenal :D"
+  
+  # utter_ask_nama:
+  # - text: "Senang berkenalan denganmu {nama}"
+  # - text: "Senang bertemu denganmu {nama}"
+  # - text: "Salam kenal {nama}"
+
+  utter_goodbye:
+  - text: "Sampai jumpa di Candi Prambanan ARTourist :)"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

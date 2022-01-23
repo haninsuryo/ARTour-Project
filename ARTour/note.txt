@@ -1,0 +1,35 @@
+Sistem Layanan Chatbot Berbasis AI menggunakan Framework Rasa Open Source 3.0
+
+1. webchat:
+	- rasa run --enable-api --cors "*"
+	- python -m http.server
+
+2. telegram :
+	- buka folder ngrok.exe
+	- ketik command "ngrok http 5005"
+	- copy paste link webhok (link selalu berganti)
+	- conda activate rasabot
+	- rasa run --enable-api --cors "*"
+	(tunggu beberapa saat)
+
+3. voice bot :
+	- conda activate rasabot
+	- rasa run --enable-api --cors "*" --debug
+	- ngrok start rasabot
+
+4. rasa testing:
+	- rasa shell nlu
+	- rasa interactive
+
+Rasa Version      :         3.0.0
+Minimum Compatible Version: 3.0.0
+Rasa SDK Version  :         3.0.2
+Rasa X Version    :         None
+Python Version    :         3.8.0
+Operating System  :         Windows-10-10.0.19041-SP0
+Python Path       :         c:\users\hanin\.conda\envs\rasabot\python.exe
+
+website : http://rasa-artour.epizy.com/
+https://cloud.google.com/speech-to-text
+
+Rasa model config : https://rasa.com/docs/rasa/components#language-models

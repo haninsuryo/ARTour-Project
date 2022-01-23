@@ -1,0 +1,321 @@
+version: "3.0"
+nlu:
+
+#1
+- intent: greet
+  examples: |
+    - assalamu'alaikum
+    - assalamualaikum
+    - halo
+    - hiii
+    - helo
+    - punten
+    - horas
+    - selamat pagi
+    - selamat siang
+    - selamat sore
+    - selamat malam
+    - hey
+    - hello
+    - hi
+    - salam
+    - halo yang disana
+    - hai artour
+    - p
+    - P
+    - /start
+    - salom om swastiastu
+    - bro
+    - wasap
+    - hoooooolaaaaaaa
+
+#2
+- intent: kabar
+  examples: |
+    - apa kabar?
+    - bagaimana kabarmu?
+    - gimana kabarnya?
+    - apa harimu baik? 
+    - bagaimana harimu
+    - apa harimu menyenangkan
+    - kabarmu baik?
+    - pripun kabare?
+    - apa kabs bro
+
+ #3   
+- intent: bantuan
+  examples: |
+    - mau tanya dong?
+    - bantuin dong?
+    - mau info 
+    - artour
+    - jadi gini
+    - minta tolong
+
+#4
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - oke
+    - baik
+    - menarik
+    - wah
+    - asik
+    - sudah
+    - siap
+    - wkwkwk
+    - hahaha
+    - sip
+    - ahaaa
+    - bagus
+    - okeoke
+    - ya
+    - makasih
+    - suka
+    - hehe
+    - okke siyap alhamdulillah !
+    - yuhuuuuu
+    - gapapa
+    - oki brodi
+    - hmmm
+
+#5
+- intent: deny
+  examples: |
+    - no
+    - n
+    - nggak
+    - engga
+    - ngga
+    - belum
+    - maaf
+    - gamau
+    - tidak
+    - nggak suka
+    - sedih
+    - lah
+    - yah
+    - aduh
+    - ih mahal
+    - mahal 
+    - jangan
+    - yaampun
+    - astaga
+
+#6
+- intent: candi
+  examples: |
+    - candi prambanan adalah
+    - apa itu candi prambanan? 
+    - candi prambanan merupakan 
+    - candi prambanan?
+    - candi prambanan ialah
+    - pengertian candi prambanan
+    - informasi candi prambana
+    - tentang candi prambanan
+    - apa yang bagus di candi 
+    - hal menarik dari prambanan
+    - aku belum pernah ke candi prambanan, jadi bisa tolong jelaskan?
+    - apa yang artour tau dari candi prambanan?
+    - kenapa ke candi?
+    - roro jonggrang
+
+#7
+- intent: lingkungan_candi
+  examples: |
+    - lingkungan sekitar candi
+    - zona candi
+    - nama candi di prambanan
+    - kompleks candi prambanan?
+    - apa saja candi di prambanan?
+    - ada apa saja di dalam candi prambanan?
+    - di dalam candi ada apa saja?
+    - apakah candi prambanan menarik? ada apa disana?
+
+#8
+- intent: lokasi
+  examples: |
+    - Candi Prambanan letaknya dimana?
+    - alamat candi prambanan?
+    - lokasi candi dimana?
+    - dimana tepatnya tempat candi prambanan?
+    - dimana
+    - lokasi alamat candi
+    - prambanan dimana sih?
+    - aku sedikit lupa lokasi candinya
+
+#9
+- intent: waktu
+  examples: |
+    - Waktu buka Candi Prambanan?
+    - kapan candi sudah buka?
+    - jadwal buka candi 
+    - jam buka candi
+    - sekarang sudah buka belum?
+
+#10
+- intent: tiket
+  examples: |
+    - karcis paket
+    - harga tiket terusan
+    - harga tiket mancanegara
+    - tiket lokal
+    - tiket masuk anak
+    - biaya masuk
+    - diskon masuk
+    - tarif masuk candi
+    - tiket masuk prambanan
+    - saat ini apakah tiket nya mahal?
+    - tarif pengunjung candi
+
+#11
+- intent: pesan
+  examples: |
+    - mau pesan tiket online
+    - mau booking
+    - ada kontak yang bisa dihubungi
+    - konfirmasi reservasi tempat
+    - mau sewa tempat
+    - call center
+    - nomor cs
+    - gimana cara bertanya ke petugas
+    - berapa nomor teleponmu
+    - nomer telp
+    - customer service
+    - cara pesan tiket
+
+#12
+- intent: akomodasi_kendaraan_pribadi
+  examples: |
+    - bagaimana cara menuju candi prambanan
+    - naik sepeda ke candi
+    - ke prambanan boncengan
+    - ke prambanan pake motor
+    - naik truk
+    - cara ke prambanan naik becak
+    - naik kendaraan pribadi menuju candi
+    - gimana cara ke prambanan dengan kendaraan pribadi?
+    - cara ke prambanan pake kendaraan darat
+    - bagaimana cara ke prambanan dengan mobil pribadi?
+    - cara ke prambanan dengan mobil sendiri?
+
+#13
+- intent: akomodasi_bus
+  examples: |
+    - naik bis kota ke prambanan
+    - TJ
+    - trans jogja
+    - naik bis
+    - bus kota
+    - bagaimana cara ke prambanan naik bus?
+    - bagaimana cara ke prambanan dengan bus?
+    - cara ke prambanan pakai bus?
+    - cara menuju candi naik bus?
+    - kalau mau ke candi naik bis gimana caranya?
+    - candi apabila naik bis dari terminal
+
+#14
+- intent: akomodasi_kereta_api
+  examples: |
+    - ke prambanan dari stasiun tugu
+    - mau ke prambanan dari stasiun lempuyangan
+    - dari stasiun
+    - ke prambanan dari stasiun
+    - dari kereta
+    - dari stasiun yogyakarta ke prambanan
+    - bagaimana cara ke prambanan dari stasiun?
+    - bagaimana cara ke prambanan dengan kereta?
+
+#15
+- intent: akomodasi_pesawat
+  examples: |
+    - dari bandara
+    - Yogyakarta International Airport  Kulon Progo ke prambanan?
+    - gimana cara ke prambanan dari bandara yogyakarta?
+    - dari pesawat
+    - dari bandara yogyakarta ke candi?
+    - cara ke prambanan dari YIA ?
+    - bagaimana cara ke prambanan dari bandara?
+    - menuju prambanan dari bandara naik pesawat?
+    - rumahku jauh tapi aku ingin ke prambanan, jika naik pesawat aku tidak tahu
+    - aku turun dibandara, selanjutnya apa yang harus kunaiki sampai candi
+
+#16
+- intent: kuliner
+  examples: |
+    - makan dimana
+    - resto apa
+    - restoran terdekat
+    - makan siang enak
+    - tempat nongkrong
+    - makan siang
+    - rekomendasi tempat makan dekat prambanan
+    - rekomendasi kuliner prambanan
+    - kuliner di sekitar prambanan?
+    - makanan enak di prambanan
+    - khas jajanan candi prambanan
+    - makanan favorit di candi
+    - apa sih makanan khas candi prambanan?
+    - aku laper 
+    - lapar pengin makan
+
+#17
+- intent: sourvenir
+  examples: |
+    - Apa saja oleh oleh candi prambanan?
+    - Buah tangan Candi Prambanan?
+    - cendera mata khas candi
+    - apa yang khas dari candi prambanan
+    - cinderamata candi prambanan
+    - Apa saja oleh-oleh dari Prambanan?
+    - Kalo souvenir ada apa aja?
+    - Mau supenir dong
+    - apa jajan dan survenir rekomendasi yang unik di candi prambanan
+
+#18
+- intent: covid
+  examples: |
+    - bagaimana protokol covid disana
+    - apa disana masih pandemi
+    - prosedur pengunjung saat covid
+    - area covid saat ini 
+    - protokol kesehatan
+    - kondisi saat pandemi covid
+    - apakah jika ke candi harus vaksin?
+    - peduli lindungi?
+
+#19
+- intent: bot_challenge
+  examples: |
+    - siapa kamu?
+    - apa kamu manusia?
+    - kamu robot apa?
+    - apa kamu bisa bicara?
+    - siapa namamu
+    - kau siapa
+    - sopo asmane
+    - ini siapa?
+
+#20
+- intent: Artourist
+  examples: |
+    - namaku [hanin](nama)
+    - saya [levina](nama)
+    - [hizkia](nama)
+    - aku [dimas](nama)
+    - panggil saja [arif](nama)
+    - halo, aku [habib](nama)
+
+#21
+- intent: goodbye
+  examples: |
+    - dadah
+    - cu
+    - selamat tinggal
+    - sampai jumpa
+    - bye
+    - goodbye
+    - cukup
+    - keluar
+    - daaaahhh ketemu lagi  

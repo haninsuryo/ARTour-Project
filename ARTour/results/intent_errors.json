@@ -1,0 +1,26 @@
+[
+  {
+    "text": "gapapa",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.6416605710983276
+    }
+  },
+  {
+    "text": "yaampun",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.3748733401298523
+    }
+  },
+  {
+    "text": "astaga",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.20100344717502594
+    }
+  }
+]

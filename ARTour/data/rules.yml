@@ -1,0 +1,108 @@
+version: "3.0"
+rules:
+
+- rule: Artourist menyapa
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- rule: Artourist bertanya kabar
+  steps:
+  - intent: kabar
+  - action: utter_kabar
+  - action: utter_bantuan
+
+- rule: Artourist butuh bantuan
+  steps:
+  - intent: bantuan
+  - action: utter_bantuan
+
+- rule: Artourist respon baik
+  steps:
+  - intent: affirm
+  - action: utter_affirm
+
+- rule: Artourist respon jelek
+  steps:
+  - intent: deny
+  - action: utter_deny
+
+- rule: Artourist bertanya candi prambanan
+  steps:
+  - intent: candi
+  - action: utter_candi
+
+- rule: Artourist bertanya tentang lingkungan Candi Prambanan
+  steps:
+  - intent: lingkungan_candi
+  - action: utter_lingkungan_candi
+
+- rule: Artourist bertanya lokasi candi prambanan
+  steps:
+  - intent: lokasi
+  - action: utter_lokasi
+
+- rule: Artourist bertanya waktu candi prambanan
+  steps:
+  - intent: waktu
+  - action: utter_waktu
+
+- rule: Artourist bertanya tiket candi prambanan
+  steps:
+  - intent: tiket
+  - action: utter_tiket
+
+- rule: Artourist bertanya cara pesan atau menghubungi cs
+  steps:
+  - intent: pesan
+  - action: utter_pesan
+
+- rule: Artourist bertanya cara menuju Candi Prambanan dengan kendaraan pribadi
+  steps:
+  - intent: akomodasi_kendaraan_pribadi
+  - action: utter_kendaraan_pribadi
+
+- rule: Artourist bertanya cara menuju Candi Prambanan dengan bus
+  steps:
+  - intent: akomodasi_bus
+  - action: utter_bus
+
+- rule: Artourist bertanya cara menuju Candi Prambanan dengan kereta api
+  steps:
+  - intent: akomodasi_kereta_api
+  - action: utter_kereta_api
+
+- rule: Artourist bertanya cara menuju Candi Prambanan dengan pesawat
+  steps:
+  - intent: akomodasi_pesawat
+  - action: utter_pesawat
+
+- rule: Artourist bertanya tentang kuliner
+  steps:
+  - intent: kuliner
+  - action: utter_kuliner
+
+- rule: Artourist bertanya tentang sourvenir
+  steps:
+  - intent: sourvenir
+  - action: utter_sourvenir
+
+- rule: Artourist bertanya tentang covid
+  steps:
+  - intent: covid
+  - action: utter_covid
+
+- rule: Artourist bertanya siapa Artour
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: Artour bertanya nama Artourist
+  steps:
+  - intent: Artourist
+  - action: utter_ask_nama
+
+- rule: Artourist mengakhiri percakapan
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye

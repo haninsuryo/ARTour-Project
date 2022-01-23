@@ -1,0 +1,49 @@
+
+version: "3.0"  
+stories:
+
+- story: path conversation
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: kabar
+  - action: utter_kabar
+  - action: utter_bantuan
+  - intent: affirm
+  - action: utter_affirm
+  - intent: deny
+  - action: utter_deny
+  - intent: bantuan
+  - action: utter_bantuan
+  - intent: candi
+  - action: utter_candi
+  - intent: lingkungan_candi
+  - action: utter_lingkungan_candi
+  - intent: lokasi
+  - action: utter_lokasi
+  - intent: waktu
+  - action: utter_waktu
+  - intent: tiket
+  - action: utter_tiket
+  - intent: pesan
+  - action: utter_pesan
+  - intent: akomodasi_kendaraan_pribadi
+  - action: utter_kendaraan_pribadi
+  - intent: akomodasi_bus
+  - action: utter_bus
+  - intent: akomodasi_kereta_api
+  - action: utter_kereta_api
+  - intent: akomodasi_pesawat
+  - action: utter_pesawat
+  - intent: kuliner
+  - action: utter_kuliner
+  - intent: sourvenir
+  - action: utter_sourvenir
+  - intent: covid
+  - action: utter_covid
+  - intent: bot_challenge
+  - action: utter_iamabot
+  - intent: Artourist
+  - action: utter_ask_nama
+  - intent: goodbye
+  - action: utter_goodbye

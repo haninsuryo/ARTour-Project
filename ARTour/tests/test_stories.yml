@@ -1,0 +1,91 @@
+#### This file contains tests to evaluate that your bot behaves as expected.
+#### If you want to learn more, please see the docs: https://rasa.com/docs/rasa/testing-your-assistant
+
+stories:
+- story: path 1
+  steps:
+  - user: |
+      hi bro
+    intent: greet
+  - action: utter_greet
+  - user: |
+      apa kabs bro?
+    intent: kabar
+  - action: utter_kabar
+  - action: utter_bantuan
+  - user: |
+      okidi
+    intent: affirm
+  - action: utter_affirm
+  - user: |
+      lah gimana
+    intent: deny
+  - action: utter_deny
+  - user: |
+      toloongss
+    intent: bantuan
+  - action: utter_bantuan
+  - user: |
+      kenapa ke candi?
+    intent: candi
+  - action: utter_candi
+  - user: |
+      di dalam candi isinya apa?
+    intent: lingkungan_candi
+  - action: utter_lingkungan_candi
+  - user: |
+      ada candi prambanan dimana
+    intent: lokasi
+  - action: utter_lokasi
+  - user: |
+      jamber candi buka?
+    intent: waktu
+  - action: utter_waktu
+  - user: |
+      tarif pengunjung candi
+    intent: tiket
+  - action: utter_tiket
+  - user: |
+      mau pesen tiket kemana
+    intent: pesan
+  - action: utter_pesan
+  - user: |
+      aku mau ke prambanan bareng keluarga 
+    intent: akomodasi_kendaraan_pribadi
+  - action: utter_kendaraan_pribadi
+  - user: |
+      apabila naik bis dari terminal
+    intent: akomodasi_bus
+  - action: utter_bus
+  - user: |
+      jaraknya jauh?
+    intent: akomodasi_kereta_api
+  - action: utter_kereta_api
+  - user: |
+      apa yang harus kunaiki sampai ke candi
+    intent: akomodasi_pesawat
+  - action: utter_pesawat
+  - user: |
+      mau nasi padang
+    intent: kuliner
+  - action: utter_kuliner
+  - user: |
+      aku mau beli oleh oleh tapi bingung 
+    intent: sourvenir
+  - action: utter_sourvenir
+  - user: |
+      apakah candi ada peduli lindungi?
+    intent: covid
+  - action: utter_covid
+  - user: |
+      sopo asmane
+    intent: bot_challenge
+  - action: utter_iamabot
+  - user: |
+      salam kenal, raya
+    intent: Artourist
+  - action: utter_ask_nama
+  - user: |
+      byee artour
+    intent: goodbye
+  - action: utter_goodbye
