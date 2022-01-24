@@ -14,4 +14,4 @@ pip install playsound
 pip install audioplayer
 
 # Running program voicebot.py pada IDE di lokal komputer 
-
+# Kemudian, ketikan command : rasa run -m models --endpoints endpoints.yml --port 5002 --credentials credentials.yml
