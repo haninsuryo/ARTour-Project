@@ -1,0 +1,17 @@
+# Buatlah virtual environment yang baru
+
+# Install RASA Open Source
+pip install python==3.8.0
+pip install rasa==3.0.0
+pip install rasa-sdk==3.0.2
+pip install sanic==21.9.3
+
+# Install library Python
+pip install request
+pip install speechrecognition
+pip install gtts
+pip install playsound
+pip install audioplayer
+
+# Running program voicebot.py pada IDE di lokal komputer 
+
